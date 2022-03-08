@@ -1,79 +1,52 @@
-//Create a class student that stores roll_no,name.Create a class test that stores marks obtained in five subjects. Class result derived from student and test contains the total marks and percentage obtained in test. Input and display information of a student.//
-
-
 
 #include<iostream>
+#include<string.h>
 using namespace std;
 
+class student				//creating student class
+	{
+		public:
+		int roll_no;
+		char name[20];
+	};		//student class ends
+class test		//creating test class
+	{
+		public:
+			
+		int marks[5];
+		
+	};		//test class ends here
+class result : public student,public test		//result class inherited from student class nnd test class(Multiple Inheritence)
+	{
+		public:
+		int total_marks;
+		double percentage;
+	};	//result class ends
+int main()		//main method starts
+	{
+		int i;
 
+		//student s1;
+		//test t1;
+		result r1;		//creating object of result class
 
-class student{
-public:
-void roll_no(){
-int z;
-cout<<"Enter the Roll Call of the Student:"<<endl;
-cin>>z;
-
-}
-
-void name(){
-int y;
-cout<<"Enter the Name of the Student:"<<endl;
-cin>>y;
-
-}
-
-};
-
-
-
-class test{
-public:
-int a,b,c,d,e;
-void marks(){
-    
-cout<<"Enter the Marks of Science"<<endl;
-cin>>a;
-cout<<"Enter the Marks of Social"<<endl;
-cin>>b;
-cout<<"Enter the Marks of Maths"<<endl;
-cin>>c;
-cout<<"Enter the Marks of English"<<endl;
-cin>>d;
-cout<<"Enter the Marks of Computer"<<endl;
-cin>>e;
-}
-
-};
-
-
-
-class result:public student,public test{
-public:
-int total;
-void total_marks(){
-total=a+b+c+d+e;
-cout<<"Total:"<<total<<endl;
-}
-
-void percentage(){
-float perc;
-perc= (total/500)*100;
-cout<<"Percentage is:"<<perc<<endl;
-
-}
-
-};
-int main(){
-student s;
-s.roll_no();
-s.name();
-//test t;
-result r;
-r.marks();
-cout<<"The result is:"<<endl;
-
-
-
-return 0;
-}
+		r1.roll_no=18;
+		strcpy(r1.name,"OmPatel");
+		cout << "Enter marks of 5 subject" << endl;
+		for(i=0;i<5;i++)	//for loop
+			{
+				cin >> r1.marks[i];
+			}
+		r1.total_marks=0;
+		for(i=0;i<5;i++)	//for loop for summation of marks
+			{
+				r1.total_marks+=r1.marks[i];
+			}
+		cout << "Roll no= " << r1.roll_no << endl;		//printing roll_no
+		cout << "Name=" << r1.name << endl;			//printing Name
+		cout << "Total marks= " << r1.total_marks << endl;	//printing Total Marks
+		r1.percentage=(double)r1.total_marks/5;			//calculating percentage
+		cout << "Total percentage= " <<r1.percentage << endl;	//printing percentage 	
+		
+		return 0;
+	}	//main me
