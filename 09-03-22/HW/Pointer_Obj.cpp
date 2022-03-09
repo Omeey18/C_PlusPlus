@@ -1,36 +1,62 @@
 #include<iostream>
 using namespace std;
 
-class branch
+class student
 {
+   //private members
+   int marks;
+   char name[20];
+
    public:
-   int B_code;
-    void b_getdata(int x)
+
+   int rollno;
+
+   //getdata method
+   void getdata()
    {
-       B_code = x;
+      cout << "Enter rollno: ";
+      cin >> rollno;
+      cout << "Enter name: ";
+      cin >> name;
+      cout << "Enter marks: ";
+      cin >> marks; 
+   }
+
+   //printdata method
+   void printdata()
+   {
+      cout << "Roll no.: " << rollno << "\nName: " << name << "\nMarks: " << marks << endl;
    }
 };
 
-class student: public branch
+class monitor : public student
 {
    public:
-   float spi;
-   void s_getdata(float x){
-       spi = x;
-   }
+   float per = 80;
    void print()
    {
-      cout << "SPI: " << spi << endl;
-      cout << "Branch: "<< B_code << endl;
+      cout << "Percentage: " << per << endl; 
    }
 };
 
 int main()
 {
-   student *ptr, s;
-   ptr = &s;
-   ptr->b_getdata(7);
-   ptr->s_getdata(8.5);
-   ptr->print();
+   student s1[3];
+   student *ptr = s1;
+   for(int i=0;i<3;i++)
+   {
+      ptr->getdata();
+       ptr++;
+   }
+  
+   cout << "\nEmployee information\n" << endl;
+
+   ptr=s1; //set pointer to starting point of array
+
+   for(int i=0;i<3;i++)
+   {
+      ptr->printdata();
+      ptr++;
+   }
    return 0;
 }
