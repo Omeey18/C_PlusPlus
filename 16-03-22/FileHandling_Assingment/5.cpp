@@ -39,8 +39,16 @@ public:
         int temp_id, flag=0;
         cout<<"\nEnter Student ID: ";
         cin>>temp_id;
-
         f.open("student.dat", ios::in | ios::binary);
+        try{
+            if(f)
+                cout<<"File Open...!\n";
+            else
+                throw 1; 
+        }
+        catch(int a){
+            cout<<"[EXCEPTION]: File can't open\n";
+        }
 
         while (f.read((char *)&s, sizeof(s)))
         {

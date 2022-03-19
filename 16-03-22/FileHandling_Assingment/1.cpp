@@ -17,12 +17,10 @@ int main()
     }
     else
     {    
-        while (!myFile.eof())
+        while (myFile>>str)
         {
-            /* code */
-            myFile>>str;
+            
             if(str == "the" | str == "The" | str == "THE"){
-                //cout<<str<<"    ";
                 count++;
             }
         }
