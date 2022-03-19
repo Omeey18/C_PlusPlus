@@ -20,14 +20,11 @@ int main()
         while (myFile>>str)
         {
             /* code working  */
-            for(int i=0;i<str.length();i++){
-                if(str.at(i) == 'a' | str.at(i) == 'A'){
+                if(str.at(0) == 'e' | str.at(0) == 'E'){
                     count++;
-                    break;
                 }
-            }
         }
-        cout<<"Total words having 'a' are : "<<count<<"\n";  
+        cout<<"Total words are START with 'E' : "<<count<<"\n";  
     }
     return 0;
 }

@@ -52,7 +52,7 @@ public:
             }
         }
         if(flag==0){
-            cout<<"\n-----No record found-----\n";
+            cout<<"\n-----No record found-----\n\n";
         }
 
         f.close();
@@ -74,7 +74,6 @@ int main()
         switch (i)
         {
         case 1:
-            /* code */
             s1.addRecord();
             break;
         

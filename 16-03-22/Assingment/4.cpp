@@ -20,14 +20,12 @@ int main()
         while (myFile>>str)
         {
             /* code working  */
-            for(int i=0;i<str.length();i++){
-                if(str.at(i) == 'a' | str.at(i) == 'A'){
+                int length = str.length()-1;
+                if(str.at(length) == 's' | str.at(length) == 'S'){
                     count++;
-                    break;
                 }
-            }
         }
-        cout<<"Total words having 'a' are : "<<count<<"\n";  
+        cout<<"Total words are END with 'S' : "<<count<<"\n";  
     }
     return 0;
 }
