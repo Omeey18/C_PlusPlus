@@ -1,0 +1,3 @@
+/home/ompatel/CPP/D25_29-03-22/student/CMakeFiles/rebuild_cache.dir
+/home/ompatel/CPP/D25_29-03-22/student/CMakeFiles/testStudent.dir
+/home/ompatel/CPP/D25_29-03-22/student/CMakeFiles/edit_cache.dir
