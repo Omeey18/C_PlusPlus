@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	Demo.cpp	/^class A  $/;"	c	file:
+B	Demo.cpp	/^class B : private A  $/;"	c	file:
+Doctor	InheritanceDemo.cpp	/^class Doctor : private person$/;"	c	file:
+ElectricCar	hybridInhe.cpp	/^class ElectricCar : public car{$/;"	c	file:
+FuelCar	hybridInhe.cpp	/^class FuelCar : public car  $/;"	c	file:
+a	Demo.cpp	/^    int a = 4;  $/;"	m	class:A	file:
+b	Demo.cpp	/^    int b = 5;  $/;"	m	class:A	file:
+battery	hybridInhe.cpp	/^    void battery(){$/;"	f	class:ElectricCar
+businessman	InheritanceDemo.cpp	/^class businessman : private person$/;"	c	file:
+buy	MultilevelInhe.cpp	/^    void buy(){$/;"	f	class:retailer
+buy_c	MultilevelInhe.cpp	/^    void buy_c(){$/;"	f	class:customer
+car	hybridInhe.cpp	/^class car  $/;"	c	file:
+customer	MultilevelInhe.cpp	/^class customer : public retailer$/;"	c	file:
+dada_car	MultipleInhe.cpp	/^    void dada_car()$/;"	f	class:grandfather
+dance	InheritanceDemo.cpp	/^    void dance()$/;"	f	class:person	file:
+diagnosis	InheritanceDemo.cpp	/^    void diagnosis()$/;"	f	class:Doctor
+display	Demo.cpp	/^    void display()  $/;"	f	class:B
+drive	hybridInhe.cpp	/^    void drive()  $/;"	f	class:car
+father	MultipleInhe.cpp	/^class father$/;"	c	file:
+father_car	MultipleInhe.cpp	/^    void father_car()$/;"	f	class:father
+footballer	InheritanceDemo.cpp	/^class footballer : private person$/;"	c	file:
+grandfather	MultipleInhe.cpp	/^class grandfather$/;"	c	file:
+height	InheritanceDemo.cpp	/^    int height=5, weight=55;$/;"	m	class:person	file:
+hybridCar	hybridInhe.cpp	/^class hybridCar : public FuelCar, public ElectricCar{$/;"	c	file:
+main	Demo.cpp	/^int main()  $/;"	f
+main	Hw.cpp	/^int main()		\/\/main method starts$/;"	f
+main	InheritanceDemo.cpp	/^int main()$/;"	f
+main	MultilevelInhe.cpp	/^int main()$/;"	f
+main	MultipleInhe.cpp	/^int main()$/;"	f
+main	hybridInhe.cpp	/^int main()  $/;"	f
+making	MultilevelInhe.cpp	/^   void making(){$/;"	f	class:manufacturer
+manufacturer	MultilevelInhe.cpp	/^class manufacturer$/;"	c	file:
+marks	Hw.cpp	/^		int marks[5];$/;"	m	class:test	file:
+mul	Demo.cpp	/^    int mul()  $/;"	f	class:A
+name	Hw.cpp	/^		char name[20];$/;"	m	class:student	file:
+percentage	Hw.cpp	/^		double percentage;$/;"	m	class:result	file:
+person	InheritanceDemo.cpp	/^class person$/;"	c	file:
+play	InheritanceDemo.cpp	/^    void play()$/;"	f	class:footballer
+reFillFuel	hybridInhe.cpp	/^    void reFillFuel()  $/;"	f	class:FuelCar
+result	Hw.cpp	/^class result : public student,public test		\/\/result class inherited from student class nnd test class(Multiple Inheritence)$/;"	c	file:
+retailer	MultilevelInhe.cpp	/^class retailer : public manufacturer$/;"	c	file:
+roll_no	Hw.cpp	/^		int roll_no;$/;"	m	class:student	file:
+run	InheritanceDemo.cpp	/^    void run()$/;"	f	class:person
+run_business	InheritanceDemo.cpp	/^    void run_business()$/;"	f	class:businessman
+sell	MultilevelInhe.cpp	/^    void sell(){$/;"	f	class:manufacturer
+sell_r	MultilevelInhe.cpp	/^    void sell_r(){$/;"	f	class:retailer
+son	MultipleInhe.cpp	/^class son : public father, public grandfather$/;"	c	file:
+son_car	MultipleInhe.cpp	/^    void son_car()$/;"	f	class:son
+student	Hw.cpp	/^class student				\/\/creating student class$/;"	c	file:
+talk	InheritanceDemo.cpp	/^    void talk()$/;"	f	class:person
+test	Hw.cpp	/^class test		\/\/creating test class$/;"	c	file:
+total_marks	Hw.cpp	/^		int total_marks;$/;"	m	class:result	file:
+walk	InheritanceDemo.cpp	/^    void walk()$/;"	f	class:person
+weight	InheritanceDemo.cpp	/^    int height=5, weight=55;$/;"	m	class:person	file:
